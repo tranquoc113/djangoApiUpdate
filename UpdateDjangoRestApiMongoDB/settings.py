@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+from pymongo.mongo_client import MongoClient
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -89,11 +91,13 @@ WSGI_APPLICATION = 'UpdateDjangoRestApiMongoDB.wsgi.application'
 DATABASES = {
    'default': {
         'ENGINE': 'djongo',
+        # 'NAME': 'updateDB',
+        # 'HOST': '127.0.0.1',
+        # 'PORT': 27017,
         'NAME': 'updateDB',
-        'HOST': '127.0.0.1',
-        'PORT': 27017,
     }
 }
+MongoClient.HOST = "mongodb+srv://tranquoc113:Anhthichem113*@cluster0.no6vv.mongodb.net/updateDB?retryWrites=true&w=majority"
 
 
 # Password validation
