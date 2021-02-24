@@ -46,7 +46,7 @@ INSTALLED_APPS = [
      # Post application 
     'posts.apps.PostsConfig',
      # CORS
-    'corsheaders',
+#     'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -61,10 +61,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
-CORS_ORIGIN_ALLOW_ALL = False
-CORS_ORIGIN_WHITELIST = (
-    'http://localhost:4200',
-)
+# CORS_ORIGIN_ALLOW_ALL = False
+# CORS_ORIGIN_WHITELIST = (
+#     'http://localhost:4200',
+# )
 
 ROOT_URLCONF = 'UpdateDjangoRestApiMongoDB.urls'
 
