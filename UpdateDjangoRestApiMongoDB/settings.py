@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'UpdateDjangoRestApiMongoDB.wsgi.application'
 
 DATABASES = {
    'default': {
-        'ENGINE': 'django_mongodb_engine',
+        'ENGINE': 'djongo',
         # 'NAME': 'updateDB',
         # 'HOST': '127.0.0.1',
         # 'PORT': 27017,
