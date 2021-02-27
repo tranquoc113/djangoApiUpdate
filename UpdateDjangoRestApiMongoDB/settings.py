@@ -100,8 +100,8 @@ DATABASES = {
         'NAME': 'updateDB',
     }
 }
-MongoClient.HOST = "mongodb+srv://tranquoc113:Anhthichem113*@cluster0.no6vv.mongodb.net/updateDB?retryWrites=true&w=majority"
-
+# MongoClient.HOST = "mongodb+srv://tranquoc113:XXXX@cluster0.no6vv.mongodb.net/updateDB?retryWrites=true&w=majority"
+#Xin phep an password cho nay
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
